@@ -1,4 +1,4 @@
-# pano-faucet
+# Pano-faucet
 The faucet is a web application with the goal of distributing small amounts of Ether in private and test networks.
 
 ## Get started
