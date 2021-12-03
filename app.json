@@ -1,0 +1,21 @@
+{
+  "name": "tpls-faucet",
+  "repository": "https://gitlab.com/pulsechain-private/tpls-faucet",
+  "env": {
+    "WEB3_PROVIDER": {
+      "description": "JSON-RPC endpoint uri to an PulseChain node",
+      "value": "https://rpc.testnet.pulsechain.com"
+    },
+    "PRIVATE_KEY": {
+      "description": "Private key hex string of the faucet sender"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "heroku/go"
+    }
+  ]
+}
