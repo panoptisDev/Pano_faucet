@@ -46,14 +46,14 @@ or
 
 ### Prerequisites
 
-* Go (1.16 or later)
+* Go (1.17 or later)
 * Node.js
 
 ### Build
 
 1. Clone the repository and navigate to the app’s directory
 ```bash
-git clone https://gitlab.com/pulsechaincom/pano-faucet.git
+git clone https://gitlab.com/panoptis.network/pano-faucet.git
 cd pano-faucet
 ```
 
@@ -61,7 +61,7 @@ cd pano-faucet
 ```bash
 npm run build
 ```
-_For more details, please refer to the [web readme](https://gitlab.com/pulsechaincom/pano-faucet/blob/main/web/README.md)_
+_For more details, please refer to the [web readme](https://gitlab.com/panoptis.network/pano-faucet/blob/main/web/README.md)_
 
 3. Build binary application to run faucet
 ```bash
