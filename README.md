@@ -1,4 +1,4 @@
-# pls-faucet
+# pano-faucet
 The faucet is a web application with the goal of distributing small amounts of Ether in private and test networks.
 
 ## Get started
@@ -7,12 +7,12 @@ The faucet is a web application with the goal of distributing small amounts of E
 
 * Use private key as sender
 ```bash
-docker run -d -p 8080:8080 -e WEB3_PROVIDER="rpc endpoint" -e PRIVATE_KEY="hex private key" chainflag/pls-faucet:1.0.0 -httpport 8080
+docker run -d -p 8080:8080 -e WEB3_PROVIDER="rpc endpoint" -e PRIVATE_KEY="hex private key" chainflag/pano-faucet:1.0.0 -httpport 8080
 ```
 
 * Use keystore file as sender
 ```bash
-docker run -d -p 8080:8080 -e WEB3_PROVIDER="rpc endpoint" -e KEYSTORE="keystore path" -v `pwd`/keystore:/app/keystore -v `pwd`/password.txt:/app/password.txt chainflag/pls-faucet:1.0.0 -httpport 8080
+docker run -d -p 8080:8080 -e WEB3_PROVIDER="rpc endpoint" -e KEYSTORE="keystore path" -v `pwd`/keystore:/app/keystore -v `pwd`/password.txt:/app/password.txt chainflag/pano-faucet:1.0.0 -httpport 8080
 ```
 
 **Optional Flags**
@@ -53,22 +53,22 @@ or
 
 1. Clone the repository and navigate to the app’s directory
 ```bash
-git clone https://gitlab.com/pulsechaincom/pls-faucet.git
-cd pls-faucet
+git clone https://gitlab.com/pulsechaincom/pano-faucet.git
+cd pano-faucet
 ```
 
 2. Bundle Frontend web with Rollup
 ```bash
 npm run build
 ```
-_For more details, please refer to the [web readme](https://gitlab.com/pulsechaincom/pls-faucet/blob/main/web/README.md)_
+_For more details, please refer to the [web readme](https://gitlab.com/pulsechaincom/pano-faucet/blob/main/web/README.md)_
 
 3. Build binary application to run faucet
 ```bash
 go build
 export WEB3_PROVIDER=https://ropsten.infura.io
 export PRIVATE_KEY=secret
-./pls-faucet
+./pano-faucet
 ```
 
 ## License
